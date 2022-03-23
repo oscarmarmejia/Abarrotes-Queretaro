@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/difuminado"
+    android:layout_height="match_parent"
+    tools:context="mejia.oscar.tiendisuperv4.ProductDetailsActivity">
+    <androidx.cardview.widget.CardView
+
+android:layout_marginTop="20dp"
+        android:layout_height="250dp"
+        android:layout_width="250dp"
+        android:id="@+id/cardview2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/input_image"
+        app:cardCornerRadius="30sp"
+        android:layout_below="@+id/administrador" >
+
+        <ImageView
+            android:id="@+id/product_image_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:scaleType="centerCrop" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <TextView
+
+        android:id="@+id/product_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview2"
+        android:text="Nombre del Producto"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/product_description_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name_details"
+        android:text="Descripción del producto"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/product_price_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_description_details"
+        android:text="Precio del producto = $ "
+        android:visibility="visible"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/product_price_details2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_price_details"
+        android:text="Precio del producto = $ "
+        android:visibility="visible"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    //
+
+    ///
+
+
+
+
+
+    <Button
+        android:id="@+id/pd_add_to_cart_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="Añadir al carrito"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" android:layout_marginTop="20dp"
+        />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_margin="10dp"
+      android:layout_above="@+id/pd_add_to_cart_button"
+        android:layout_gravity="bottom"
+        tools:ignore="BottomAppBar">
+
+
+
+        <Button
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:onClick="restar"
+            android:id="@+id/menos"
+            android:layout_marginRight="20dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" +  "
+            android:gravity="center"
+            android:onClick="sumar"
+            android:textSize="30dp"
+            android:id="@+id/mas"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad        "
+            />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:textSize="50dp"
+
+            android:layout_height="wrap_content"
+            android:hint="0"
+            />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+
+</RelativeLayout>

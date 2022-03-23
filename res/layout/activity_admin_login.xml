@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/difuminado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLoginActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:id="@+id/cardview2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20sp"
+        android:layout_height="250dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loginid"
+        android:src="@drawable/icnomain9"
+        android:scaleType="centerCrop"
+
+
+        />
+</androidx.cardview.widget.CardView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/telefono_log_id"
+        android:layout_below="@+id/cardview2"
+        android:background="@drawable/inputs"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Administrador"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_entrada_log_id"
+        android:layout_below="@+id/telefono_log_id"
+        android:background="@drawable/inputs"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="6dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="TextFields" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/admin_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrar como administrador"
+  android:layout_above="@+id/btn_entrada_tienda"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="23dp" />
+
+
+    <Button
+
+        android:id="@+id/btn_entrada_tienda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorPrimary"
+        android:padding="17dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:textSize="25sp"
+        android:text="Entrar"
+        android:textColor="@android:color/white"
+        />
+
+
+
+</RelativeLayout>

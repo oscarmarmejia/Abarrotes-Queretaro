@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/difuminado"
+    tools:context=".HomeActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+app:menu="@menu/nav_menu_arriba"
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/barra_arriba"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+android:background="@color/barra_abajo2"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="2dp"
+    android:src="@drawable/icnomain9"
+    android:layout_marginRight="30dp"
+
+    />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:verticalScrollbarPosition="left"
+                android:text="@string/app_name"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_menu"
+android:layout_below="@+id/barra_arriba"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:layout_above="@+id/barra_abajo"
+        android:scrollbars="none" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/barra_abajo"
+app:menu="@menu/barra_abajo"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        android:background="@color/barra_abajo2"
+        />
+
+
+</RelativeLayout>

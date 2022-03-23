@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/difuminado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminCategoryActivity">
+
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Añadir nuevo producto."
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layauott1"
+        android:layout_below="@id/slogan_category"
+        >
+
+        <Button
+            android:id="@+id/Abarrotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Abarrotes"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/Bebidas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Bebidas"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:id="@+id/Lacteos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Lácteos"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layauott2"
+        android:layout_below="@id/layauott1"
+        >
+
+        <Button
+            android:id="@+id/Harinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Con Harina"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/Botanas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Botanas"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:id="@+id/Dulces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Dulces"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layauott3"
+        android:layout_below="@id/layauott2"
+        >
+
+        <Button
+            android:id="@+id/Frutas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Frutas y Verduras"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/Congelados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Congelados"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:id="@+id/Enlatados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Enlatados"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layauott4"
+        android:layout_below="@id/layauott3"
+        >
+
+        <Button
+            android:id="@+id/Hogar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Hogar"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/Higiene"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Higiene Persona"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:id="@+id/Otros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:text="Otros"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layauott5"
+        android:layout_below="@id/layauott4"
+        >
+
+        <Button
+            android:id="@+id/maintain_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Modificar productos"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/check_orders_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            android:text="Checar Ordenes"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/layauott5"
+        android:orientation="vertical"
+        android:id="@+id/layouttt"
+        android:background="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <Switch
+            android:layout_width="125dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:textColorLink="@color/black"
+            android:text="Tienda"
+            android:textSize="18dp"
+            android:layout_height="50dp"
+            android:id="@+id/switch_abrir"
+
+            android:textColor="@color/black"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cerrado/abierto"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/switch_abrir"
+            />
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/layouttt"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputs"
+        android:hint="Mensaje arriba"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:id="@+id/mensaje1"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/mensaje1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputs"
+        android:hint="Mensaje abajo"
+        android:textColorHint="@color/black"
+        android:id="@+id/mensaje2"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layauott6"
+        android:layout_below="@id/mensaje2"
+        >
+
+        <Button
+            android:id="@+id/actualizar_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="13dp"
+            android:text="actualizar mensajes"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/admin_logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/botoon"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textSize="13dp"
+            android:text="salir"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

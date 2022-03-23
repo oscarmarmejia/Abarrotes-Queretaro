@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/difuminado"
+    tools:context=".MainActivity">
+
+
+
+
+    <Button
+        android:id="@+id/administrador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/inputs"
+        android:padding="5dp"
+        android:textAllCaps="false"
+
+        android:textSize="12sp"
+        android:text="Admin"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:layout_weight="5"
+        android:layout_marginTop="3dp"
+/>
+<androidx.cardview.widget.CardView
+
+
+    android:layout_height="250dp"
+    android:layout_width="250dp"
+    android:id="@+id/cardview"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/input_image"
+    app:cardCornerRadius="30sp"
+    android:layout_below="@+id/administrador" >
+
+    <ImageView
+        android:layout_below="@+id/administrador"
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+
+
+        android:src="@drawable/icnomain10"
+        />
+
+</androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/app_sloganmain"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/cardview"
+        android:layout_centerHorizontal="true"
+        android:text="Abarrotes Querétaro."
+        android:textAlignment="center"
+android:visibility="invisible"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        android:gravity="center_horizontal" />
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/app_slogan"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/cardview"
+        android:layout_centerHorizontal="true"
+        android:text="Abarrotes Querétaro"
+        android:textAlignment="center"
+
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+
+        android:gravity="center_horizontal" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/inputs"
+        android:textSize="12dp"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="Hola"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_slogan"
+        android:id="@+id/addid"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/inputs"
+        android:textSize="12dp"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:text="Hola"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addid"
+        android:id="@+id/addid2"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layauott"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/entrar_button_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+
+            android:padding="10dp"
+
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:text="Entrar"
+            android:textColor="@color/hueso"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+
+            android:layout_weight="0"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layauott"
+            android:text="Para cualquier duda puede comunicarse al teléfono (442)720-5697"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
