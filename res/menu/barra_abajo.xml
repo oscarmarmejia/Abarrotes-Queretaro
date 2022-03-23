@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+android:id="@+id/unos"
+        android:iconTint="@color/white"
+        android:icon="@drawable/about_uss"
+        android:title="Contacto" />
+
+    <item
+        android:iconTint="@color/white"
+        android:id="@+id/dosss"
+        android:icon="@drawable/cuenta"
+        android:title="Mi cuenta" />
+
+    <item
+        android:id="@+id/tress"
+        android:iconTint="@color/white"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Carrito" />
+
+</menu>
